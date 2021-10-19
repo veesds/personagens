@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="menu.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <a href="#" class="btns-abrir" onclick="abrirMenu()">&#9776; Abrir</a>
+    </header>
+    <nav id="menu">
+        
+            <a href="#" onclick="fecharMenu()">&times; Fechar</a>
+            <a href="index.html">Home</a>
+            <a href="index1.html">Trilha da Costa da Lagoa</a>
+       
+            <a href="index2.html">Trilha do Gravatá</a>
+        
+            <a href="index3.html">Trilha das piscinas naturais</a>
+        
+
+    </nav>
+    <main>
+        //conteúdo//
+    </main>
+    <script>
+        function abrirMenu(){
+            document.getElementById('menu').style.width = '250px';
+        }
+        function fecharMenu(){
+            document.getElementById('menu').style.width ='0px';
+        }
+    </script>
+</body>
+</html>

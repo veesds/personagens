@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="pt=br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PersonagensDC</title>
+</head>
+<body>
+    <header>
+        <a href="#" class="btn-abrir" onclick="abrirMenu()">&#9776; </a>
+        <div class="imagem">
+           <a href="mailto: vitoria_s_souza@estudante.sc.senai.br"><img class="imagem" src="email.jpg" width="50px" height="45px"></a> 
+           <a href="https://github.com/veesds"><img class="imagem" src="git.jpg" width="50px" height="45px"></a> 
+        </div>
+    </header>
+
+    <div class="img">
+        <img class="img" src="principal.jpg">
+    </div> 
+                    <nav id="menu">
+                        
+                            <a href="#" onclick="fecharMenu()">&times; Fechar </a>
+                            <a href="ravena.html">Ravena</a>
+                            <a href="flash2.html">Flash</a>
+                            <a href="zatanna.html">Zatanna</a>
+                            <a href="pagina.html">Ficha Técnica</a>
+                    </nav>
+                </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    <main id="conteudo">
+        <h1>Personagens da DC</h1>
+        <p> DC Comics é uma editora norte-americana subsidiária da companhia WarnerMedia situada em Burbank, Califórnia, especializada em histórias em quadrinhos e mídias relacionadas,
+             sendo considerada uma das maiores companhias ligadas a este ramo no mundo.
+            O universo da DC conta com mais de 10mil personagens, listei aqui 3 dos meus preferidos no menu acima.</p>
+        <div class="shrink">
+            <a href="formulario.html">Formulário</a>
+            <a href="https://tecnoblog.net/meiobit/417163/os-17-personagens-mais-poderosos-da-dc/">Personagens mais Poderosos</a>
+
+        </div>
+    </main>
+    <a id="link-topo" href="#">&#9650;</a>
+    <footer class="footer">
+        <h2>Vitória Simões de Souza</h2>
+        
+    </footer>
+    
+    <script>
+        // js para abrir e fechar o menu
+        function abrirMenu(){
+           document.getElementById('menu').style.width = '250px';
+            document.getElementById('conteudo').style.marginLeft = '250px';
+        }
+        function fecharMenu(){
+            document.getElementById('menu').style.width = '0px';
+            document.getElementById('conteudo').style.marginLeft = '0px';
+        }
+    </script>
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Yaldevi:wght@300&display=swap');
+        body{
+            margin: 0;
+            background-color: rgb(238, 196, 255);
+        }
+        a{
+            text-decoration: none;
+        }
+        .btn-abrir{
+            color: rgb(250, 249, 249);
+            font-size: 50px;
+        }
+        nav{
+            height: 100%;
+            width: 0px;
+            background-color: #000000;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 1;
+            overflow: hidden;
+            transition: width 0.4s;
+        }
+        nav a{
+            color: rgb(255, 254, 254);
+            font-size: 25px;
+            display: block;
+            padding: 12px 10px 12px 32px;
+            font-size: x-large;
+            padding: 45px;
+            transition: .5s ease-in-out;
+
+        }
+        nav a:hover{
+            background-color: #58136d ;
+            transition: 0.3s;
+        }
+        header{
+            padding: 5px;
+            background: linear-gradient(72deg, #58136d 35%, #000000 65%);
+            display: flex;
+        }
+        .imagem{
+            display: flex;
+            padding: 7px;
+        }
+        .img{
+            width: 100%;
+            height: 20rem;
+        }
+        main{
+            padding: 20px;
+
+        }
+        p{
+            color: black;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: x-large;
+        }
+        footer{
+            background: linear-gradient(72deg, #58136d 35%, #000000 65%);
+            padding: 15px;
+        }
+        #link-topo{
+            text-decoration: none;
+            color: rgb(255, 255, 255);
+            background-color: #58136d;
+            position: fixed;
+            padding: 10px 10px;
+            right: 10px;
+            text-transform: uppercase;
+            bottom: 10px;
+            box-shadow: 3px 3px 10px rgb(22, 16, 16);
+            border-radius: 3px;
+        }
+        h1{
+            font-size: 50px;
+            text-transform: uppercase;
+            letter-spacing: 4px;
+            font-family: "Yaldevi";
+        }
+        h2{
+            color: white;
+            text-align: center;
+            font-family: "Yaldevi";
+            font-size: large;
+        }
+        .shrink{
+            margin-left: 15rem;
+            margin-top: 1rem;
+            display: flex;
+        }
+        .shrink a{
+            font-size: x-large;
+            color: rgb(26, 25, 25);
+            padding: 1rem 7rem;
+            border: 2px solid rgb(25, 65, 141);
+            min-width: 10rem;
+            display: flex;
+            transition: .5s ease-in-out;
+        
+        } 
+        .shrink a:hover{
+            background-color: cornsilk;
+            -webkit-transform: scale(0.9);
+            -ms-transform: scale(0.9);
+            transform: scale(0.9);
+
+        }
+    </style>
+</body>
+</html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zatanna</title>
+</head>
+<body>
+   <header>
+    <a href="index.html"><img class="imagem" src="botão.jpg" width="50" height="50"></a>
+    <h1>Zatanna</h1>
+   </header>
+   <div id="items-wrapper">
+    <div id="items">
+      <div class="item"><img class="img" src="zatanna0.jpg"/></div>
+      <div class="item"><img class="img" src="zatanna4.jpg"/></div>
+      <div class="item"><img class="img" src="zatanna1.jpg"/></div>
+      <div class="item"><img class="img" src="zatanna3.jpg"/></div>
+    </div>
+  </div>
+  <a id="link-topo" href="#">&#9650;</a>
+   <main>
+    <p>Zatanna Zatara é uma das heroínas mais importantes do Universo DC e um dos elos místicos fundamentais da editora,
+         sempre vista como um membro essencial da Liga da Justiça Sombria e outras equipes místicas. A Homo Magi também é uma integrante de apoio para a Liga da Justiça tradicional em situações sobrenaturais.
+
+    </p>
+    <h2>Origem</h2>
+    <hr>
+    <p>
+        Zatanna Zatara é filha do mágico Giovanni John Zatara e Sindella, uma descendente direta de Leonardo da Vinci e possui laços com outras figuras importantes da ciência e artes, como é o caso de Nostradamus.
+A heroína cresceu e se tornou uma mágica e ilusionista antes de descobrir seus poderes. Ela os despertou enquanto procurava pelo paradeiro de seu pai.
+    </p>b
+    <h2>Habilidades</h2>
+    <hr>
+    <p>
+       <br> Zatanna é considerado um dos mágicos mais poderosos do mundo do Universo DC; como membro do Homo magi, ela possui tanto a capacidade genética de usar magia e tem domínio sobre forças místicas e cósmicas consideradas tão antigas quanto o universo. Sua proeza lhe rendeu o título de "Senhora da Magia" e também "Feiticeira Suprema".
+        Geralmente lança feitiços falando ao contrário (conhecido como "Logomancy") para uma variedade de efeitos mágicos, como teletransporte, cura, manipulação da mente dos outros, e muito mais. Também pode lançar feitiços e outras magias normalmente e por outros meios.
+      <br> Além de suas habilidades mágicas, Zatanna é uma ilusionista, dançarina e mágica de palco, mesmo sem recorrer a seus poderes mágicos inatos. Ela considera parte de seu "treinamento" exercitando truques manuais, e ela afirma ter inventado uma variação do monte de três cartas chamada "Zatara shuffle", na qual ela é tão rápida e precisa que, mesmo sem recorrer a trapaças, apenas jogadores qualificados como Selina Kyle são capazes de seguir os movimentos de suas mãos. Zatanna também é uma combatente habilidosa, tendo sido treinada por seu pai durante sua infância.
+
+    </p>
+   </main>
+   
+   <footer>
+
+   </footer>
+  
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+        *{margin: 0; padding:0; box-sizing: border-box;}
+        body{
+            display: grid;
+            place-items: center;
+            height: 50vw;
+            background-color: rgb(238, 196, 255);
+        }
+        #items-wrapper{
+            width: 50vw;
+            padding: 15px;
+        }
+        #items{
+            display: flex;
+            overflow-x: auto;
+            scroll-snap-type: x mandatory;
+        }
+        .item{
+            flex: none;
+            width: 100%;
+            height: 400px;
+            scroll-snap-align: start ;
+        }
+        .img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        header{
+            background: linear-gradient(72deg, #58136d 35%, #000000 65%);
+            height: 100px;
+            width: 100%;
+            padding: 0%;
+        }
+        main{
+            padding: 10px;
+        }
+        footer{
+            background: linear-gradient(72deg, #58136d 35%, #000000 65%);
+            height: 100px;
+            width: 100%;
+            padding: 0%;
+        }
+        #link-topo{
+            text-decoration: none;
+            color: rgb(255, 255, 255);
+            background-color: #58136d;
+            position: fixed;
+            padding: 10px 10px;
+            right: 10px;
+            text-transform: uppercase;
+            bottom: 10px;
+            box-shadow: 3px 3px 10px rgb(22, 16, 16);
+            border-radius: 3px;
+
+        }
+        .imagem{
+            
+            padding: 10px;
+        }
+        h1{
+            text-align: center;
+            color: white;
+            font-family: Oswald;
+        }
+        hr{
+            margin: 5px;
+        }
+        
+    </style>
+</body>
+</html>

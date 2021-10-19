@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <form>
+        <label for="personagem">Personagem Preferida</label>
+        <select name="personagem" id="personagem">
+            <option value="ravena">Ravena</option>
+            <option value="flash">Flash</option>
+            <option value="zatanna">Zatanna</option>
+        </select>
+        <label for="habilades">Melhor habilade</label>
+        <select name="habilidades" id="habilidades">
+            <option value="ravena">Ravena</option>
+            <option value="flash">Flash</option>
+            <option value="zatanna">Zatanna</option>
+        </select>
+        <label for="dataForm">Data de envio</label>
+        <input type="date" name="dataForm" id="dataForm">
+        
+    </form>
+    <script>
+        if (localStorage.personagem) {
+    document.getElementById('personagem').value = localStorage.personagem;
+}
+if (localStorage.habilidades){
+    document.getElementById('habilidades').value = localStorage.habilidades;
+}
+if (localStorage.dataForm) {
+    document.getElementById('dataForm').value = localStorage.dataForm;
+}
+var salvarData = function() {
+    var personagem = document.getElementById('personagem').value;
+    var habilidades = document.getElementById('habilidades').value;
+    var dataForm = document.getElementById('dataForm').value;
+    localStorage.setItem('personagem', personagem);
+    localStorage.setItem('habilidades', habilidades);
+    localStorage.setItem('dataForm', dataForm);
+};
+
+document.onchange = salvarData;
+</script>
+    <style>
+    body{
+        background-color: rgb(235, 186, 235);
+    }
+    form {
+        max-width: 400px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    input, label, select {
+        font-size: 1.125rem;
+        font-family: monospace;
+        background: white;
+        border-radius: 0px;
+    }
+
+    label {
+        font-weight: bold;
+        color: #8844ee;
+        margin: 20px 0 5px 0;
+        background-color: rgb(235, 186, 235);
+    }
+    </style>
+       
+</body>
+</html> 
